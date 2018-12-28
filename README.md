@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/qpady2smqofhox6b/branch/master?svg=true)](https://ci.appveyor.com/project/burck1/au-packages/branch/master)
 
-[Update status](https://gist.github.com/burck1/d237d64fcdb60a0ece02fe19e46d29e0)
+[Update status](https://gist.github.com/burck1/b34ed75bc423eed6bb9fd9347fff4de8)
 
 [chocolatey/burck1](https://chocolatey.org/profiles/burck1)
 
