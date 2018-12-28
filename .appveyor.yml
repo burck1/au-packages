@@ -21,6 +21,8 @@ environment:
   github_api_key:
     secure: YCB0XqB2QSrTd7TX7XmJdKnD3hzhzcX1hALdDSiCnOcV8+TIlF2hDyAPP4ZggP80
 
+  gist_id: ecea81858592e7d6fb0d2f5f75beda36
+
   api_key:
     secure: 04PnpfPlqGbOx8w73VVJeofzcbua4hqJ9mcsjtG26ZsZvHJ9ptrzn5u1WRRAwYQW
 
