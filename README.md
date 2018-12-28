@@ -1,5 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/qpady2smqofhox6b/branch/master?svg=true)](https://ci.appveyor.com/project/burck1/au-packages/branch/master)
+
 [Update status](https://gist.github.com/burck1/d237d64fcdb60a0ece02fe19e46d29e0)
+
 [chocolatey/burck1](https://chocolatey.org/profiles/burck1)
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
