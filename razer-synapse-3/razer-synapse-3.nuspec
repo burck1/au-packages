@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>razer-synapse-3</id>
     <title>Razer Synapse 3</title>
-    <version>1.0.87.115</version>
+    <version>1.0.87.115-beta</version>
     <authors>Razer Inc.</authors>
     <owners>Alex Burck</owners>
     <summary>Maximize your unfair advantage with Razer Synapse 3, the unified hardware configuration tool that takes your Razer device to the next level.</summary>
@@ -29,7 +29,7 @@ For more information, see [https://www.razer.com/synapse-3](https://www.razer.co
     <packageSourceUrl>https://github.com/burck1/au-packages</packageSourceUrl>
     <tags>razer synapse</tags>
     <copyright>Razer Inc.</copyright>
-    <licenseUrl>https://www.razer.com/synapse-3</licenseUrl>
+    <licenseUrl>https://assets.razerzone.com/downloads/software/RazerEndUserLicenseAgreement.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/burck1/au-packages@master/razer-synapse-3/icons/razer-synapse.png</iconUrl>
     <!--<dependencies>

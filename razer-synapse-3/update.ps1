@@ -37,6 +37,9 @@ function global:au_GetLatest {
   }
   $version = $matches.Version
 
+  # Synapse 3 is currently in Beta. Remove once out of Beta
+  $version = "$version-beta"
+
   return @{
     Version = $version
     URL32   = $downloadUrl

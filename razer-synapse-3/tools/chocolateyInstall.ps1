@@ -10,9 +10,10 @@ $packageArgs = @{
   url                    = $url
   checksum               = $checksum
   checksumType           = 'sha256'
-  softwareName           = 'Razer Synapse 3'
-  silentArgs             = "/S /v/qn"
-  validExitCodes         = @(0, 3010, 1641)
+  softwareName           = 'Razer Synapse'
+
+  # UNKNOWN at this time. Will require an 'attended' install.
+  # silentArgs = "/SLIENT"
 }
 
 Install-ChocolateyPackage @packageArgs
