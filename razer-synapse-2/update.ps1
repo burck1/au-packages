@@ -10,18 +10,14 @@ $ErrorActionPreference = 'Stop'
 $razerSynapseUrl = 'http://rzr.to/synapse-pc-download'
 
 function global:au_BeforeUpdate() {
-  $cs = Get-RemoteChecksum -Url $Latest.Url32 -Algorithm 'SHA256'
-  $Latest.Checksum32 = $cs
-  $Latest.Checksum64 = $cs
+  $Latest.Checksum32 = Get-RemoteChecksum -Url $Latest.Url32 -Algorithm 'SHA256'
 }
 
 function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
       "(?i)(^[$]url\s*=\s*)'.*'"        = "`${1}'$($Latest.URL32)'"
-      "(?i)(^[$]url64\s*=\s*)'.*'"      = "`${1}'$($Latest.URL64)'"
       "(?i)(^[$]checksum\s*=\s*)'.*'"   = "`${1}'$($Latest.Checksum32)'"
-      "(?i)(^[$]checksum64\s*=\s*)'.*'" = "`${1}'$($Latest.Checksum64)'"
     }
   }
 }
@@ -42,9 +38,8 @@ function global:au_GetLatest {
   $version = $matches.Version
 
   return @{
-    Version        = $version
-    URL32          = $downloadUrl
-    URL64          = $downloadUrl
+    Version = $version
+    URL32   = $downloadUrl
   }
 }
 
