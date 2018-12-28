@@ -22,10 +22,9 @@ The key features of Razer Synapse 3 are:
 
 For more information, see [https://www.razer.com/synapse-3](https://www.razer.com/synapse-3).
     </description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://www.razer.com/synapse-3</releaseNotes>
     <projectUrl>https://www.razer.com/synapse-3</projectUrl>
     <docsUrl>https://www.razer.com/synapse-3</docsUrl>
-    <projectSourceUrl>https://www.razer.com/synapse-3</projectSourceUrl>
     <packageSourceUrl>https://github.com/burck1/au-packages</packageSourceUrl>
     <tags>razer synapse</tags>
     <copyright>Razer Inc.</copyright>

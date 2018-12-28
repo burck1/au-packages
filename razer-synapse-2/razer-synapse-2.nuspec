@@ -25,10 +25,9 @@ System Requirements:
 
 For more information, see [https://www.razer.com/synapse-2](https://www.razer.com/synapse-2).
     </description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://www.razer.com/synapse-2</releaseNotes>
     <projectUrl>https://www.razer.com/synapse-2</projectUrl>
     <docsUrl>https://www.razer.com/synapse-2</docsUrl>
-    <projectSourceUrl>https://www.razer.com/synapse-2</projectSourceUrl>
     <packageSourceUrl>https://github.com/burck1/au-packages</packageSourceUrl>
     <tags>razer synapse</tags>
     <copyright>Razer Inc.</copyright>
