@@ -11,7 +11,7 @@ branches:
 
 environment:
   au_version: 2018.5.18
-  au_push: false
+  au_push: true
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
 
