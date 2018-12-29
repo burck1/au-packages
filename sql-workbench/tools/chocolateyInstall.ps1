@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 # DO NOT CHANGE THESE MANUALLY. USE update.ps1
-$url      = 'https://www.sql-workbench.eu/Workbench-Build123.zip'
-$checksum = 'ABC'
+$url      = 'https://www.sql-workbench.eu/Workbench-Build124.zip'
+$checksum = '3a54f1293524ec792e9abd1c57c7c0509ab42ae914a46bee36d7a1a12abb4603'
 
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
