@@ -14,7 +14,7 @@ SQL Workbench/J is a free, DBMS-independent, cross-platform SQL query tool. It i
 
 Its main focus is on running SQL scripts (either interactively or as a batch) and export/import features. Graphical query building or more advanced DBA tasks are not the focus and are not planned.
 
-The key features of SQL Workbench/J are:
+Features:
 
 * Edit, insert and delete data directly in the [query result](https://www.sql-workbench.eu/MainWindow_png.html) ([Screenshot](https://www.sql-workbench.eu/EditData_png.html))
 * Powerful [export command](https://www.sql-workbench.eu/manual/command-export.html) to write text files (aka "CSV"), XML, HTML or SQL (including BLOB data). All user tables can be exported into a directory with a single command. Export files can be compressed "on-the-fly".
@@ -36,7 +36,6 @@ The key features of SQL Workbench/J are:
 * Display table source ([Screenshot](https://www.sql-workbench.eu/TableSource_png.html))
 * Display view, procedure and trigger source code ([Screenshot](https://www.sql-workbench.eu/ViewSource_png.html))
 * Display foreign key constraints between tables ([Screenshot](https://www.sql-workbench.eu/FkDisplay_png.html))
-* Full support for BLOB data in query results, SQL statements, export and import. [Read more...](https://www.sql-workbench.eu/blob_example.html)
 
 For more information, see [https://www.sql-workbench.eu/](https://www.sql-workbench.eu/).
     </description>
