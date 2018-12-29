@@ -9,7 +9,7 @@ $ErrorActionPreference = 'Stop'
 
 $razerSynapseUrl = 'http://rzr.to/synapse-pc-download'
 
-function global:au_BeforeUpdate() {
+function global:au_BeforeUpdate {
   $Latest.Checksum32 = Get-RemoteChecksum -Url $Latest.Url32 -Algorithm 'SHA256'
 }
 
@@ -43,5 +43,8 @@ function global:au_GetLatest {
   }
 }
 
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-Update-Package -NoCheckUrl -NoCheckChocoVersion -NoReadme -ChecksumFor none -Force:$Force
+# run the update only if this script is not sourced by the virtual package
+if ($MyInvocation.InvocationName -ne '.') {
+  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+  Update-Package -NoCheckUrl -NoCheckChocoVersion -NoReadme -ChecksumFor none -Force:$Force
+}

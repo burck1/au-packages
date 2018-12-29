@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>razer-synapse-2</id>
+    <title>Razer Synapse 2</title>
+    <version>2.21.21.1</version>
+    <authors>Razer Inc.</authors>
+    <owners>Alex Burck</owners>
+    <summary>Razer Synapse is our unified configuration software that allows you to rebind controls or assign macros to any of your Razer peripherals and saves all your settings automatically to the cloud.</summary>
+    <description>
+Razer Synapse is our unified configuration software that allows you to rebind controls or assign macros to any of your Razer peripherals and saves all your settings automatically to the cloud. No more tedious device configurations when you arrive at LAN parties or tourneys, as you can pull them from the cloud, and get owning right away.
+
+The key features of Razer Synapse are:
+
+* **Hardware Configurator**: Razer Synapse is our unified configuration software that allows you to rebind controls or assign macros to any of your Razer peripherals and saves all your settings automatically to the cloud.
+* **Stats &amp; Heatmaps**: Track all your in-game clicks, movements and more as you put your peripherals through the paces with Razer Synapse Stats &amp; Heatmaps and analyze your gameplay with the help of automatically generated heatmaps. And no worries, stats tracking is entirely optional.
+* **Convenient Warranty Registration &amp; Code Redemption**: Razer Synapse offers a hassle-free way to register your product warranties, check remaining warranty durations, and makes you eligible for exclusive Razerstore promotions, game beta code giveaways and other exciting treats.
+
+System Requirements:
+
+* 100 Mbyte of free hard disc space
+* Valid e-mail, software download, license acceptance, and internet connection needed to activate full features and for software updates. After activation, full features are available in optional offline mode.
+
+For more information, see [https://www.razer.com/synapse-2](https://www.razer.com/synapse-2).
+    </description>
+    <releaseNotes>https://www.razer.com/synapse-2</releaseNotes>
+    <projectUrl>https://www.razer.com/synapse-2</projectUrl>
+    <docsUrl>https://www.razer.com/synapse-2</docsUrl>
+    <packageSourceUrl>https://github.com/burck1/au-packages</packageSourceUrl>
+    <tags>razer synapse</tags>
+    <copyright>Razer Inc.</copyright>
+    <licenseUrl>https://assets.razerzone.com/downloads/software/RazerEndUserLicenseAgreement.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/burck1/au-packages@master/razer-synapse-2/icons/razer-synapse.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

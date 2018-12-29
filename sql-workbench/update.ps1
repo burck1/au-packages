@@ -7,9 +7,9 @@ param (
 
 $ErrorActionPreference = 'Stop'
 
-$razerSynapseUrl = 'http://rzr.to/synapse-3-pc-download'
+$razerSynapseUrl = 'http://rzr.to/synapse-pc-download'
 
-function global:au_BeforeUpdate {
+function global:au_BeforeUpdate() {
   $Latest.Checksum32 = Get-RemoteChecksum -Url $Latest.Url32 -Algorithm 'SHA256'
 }
 
@@ -32,13 +32,10 @@ function global:au_GetLatest {
   }
 
   $downloadUrl = $response.Headers.Location
-  if (-not ($downloadUrl -match '.*_V(?<Version>.*)\.exe')) {
+  if (-not ($downloadUrl -match '.*_v(?<Version>.*)\.exe')) {
     throw "Could not determine version from url $downloadUrl"
   }
   $version = $matches.Version
-
-  # Synapse 3 is currently in Beta. Remove once out of Beta
-  $version = "$version-beta"
 
   return @{
     Version = $version
@@ -46,8 +43,5 @@ function global:au_GetLatest {
   }
 }
 
-# run the update only if this script is not sourced by the virtual package
-if ($MyInvocation.InvocationName -ne '.') {
-  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-  Update-Package -NoCheckUrl -NoCheckChocoVersion -NoReadme -ChecksumFor none -Force:$Force
-}
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+Update-Package -NoCheckUrl -NoCheckChocoVersion -NoReadme -ChecksumFor none -Force:$Force
