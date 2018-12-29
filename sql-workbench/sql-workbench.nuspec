@@ -3,40 +3,55 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>razer-synapse-2</id>
-    <title>Razer Synapse 2</title>
-    <version>2.21.21.1</version>
-    <authors>Razer Inc.</authors>
+    <id>sql-workbench</id>
+    <title>SQL Workbench/J</title>
+    <version>124</version>
+    <authors>Thomas Kellerer</authors>
     <owners>Alex Burck</owners>
-    <summary>Razer Synapse is our unified configuration software that allows you to rebind controls or assign macros to any of your Razer peripherals and saves all your settings automatically to the cloud.</summary>
+    <summary>SQL Workbench/J is a free, DBMS-independent, cross-platform SQL query tool.</summary>
     <description>
-Razer Synapse is our unified configuration software that allows you to rebind controls or assign macros to any of your Razer peripherals and saves all your settings automatically to the cloud. No more tedious device configurations when you arrive at LAN parties or tourneys, as you can pull them from the cloud, and get owning right away.
+SQL Workbench/J is a free, DBMS-independent, cross-platform SQL query tool. It is written in Java and should run on any operating system that provides a Java Runtime Environment.
 
-The key features of Razer Synapse are:
+Its main focus is on running SQL scripts (either interactively or as a batch) and export/import features. Graphical query building or more advanced DBA tasks are not the focus and are not planned.
 
-* **Hardware Configurator**: Razer Synapse is our unified configuration software that allows you to rebind controls or assign macros to any of your Razer peripherals and saves all your settings automatically to the cloud.
-* **Stats &amp; Heatmaps**: Track all your in-game clicks, movements and more as you put your peripherals through the paces with Razer Synapse Stats &amp; Heatmaps and analyze your gameplay with the help of automatically generated heatmaps. And no worries, stats tracking is entirely optional.
-* **Convenient Warranty Registration &amp; Code Redemption**: Razer Synapse offers a hassle-free way to register your product warranties, check remaining warranty durations, and makes you eligible for exclusive Razerstore promotions, game beta code giveaways and other exciting treats.
+The key features of SQL Workbench/J are:
 
-System Requirements:
+* Edit, insert and delete data directly in the [query result](https://www.sql-workbench.eu/MainWindow_png.html) ([Screenshot](https://www.sql-workbench.eu/EditData_png.html))
+* Powerful [export command](https://www.sql-workbench.eu/manual/command-export.html) to write text files (aka "CSV"), XML, HTML or SQL (including BLOB data). All user tables can be exported into a directory with a single command. Export files can be compressed "on-the-fly".
+* Powerful text, XML and spreadsheet [import](https://www.sql-workbench.eu/manual/command-import.html). A set of files (including compressed files) can be imported from a directory with a single * command. Foreign key constraints are detected to insert the data in the correct order
+* [Compare](https://www.sql-workbench.eu/manual/compare-commands.html#command-schema-diff) two database schemas for differences. The XML output can be transformed into the approriate SQL ALTER statements using [XSLT](https://www.sql-workbench.eu/xslt.html)
+* [Compare the data](https://www.sql-workbench.eu/manual/compare-commands.html#command-data-diff) of two database and generate the necessary SQL statements to migrate one to the other.
+* Supports running SQL scripts in [batch mode](https://www.sql-workbench.eu/manual/using-scripting.html)
+* Supports running in [console mode](https://www.sql-workbench.eu/manual/console-mode.html) ([Screenshot](https://www.sql-workbench.eu/console_png.html))
+* Search text in procedure, view and other sources using a [SQL command](https://www.sql-workbench.eu/manual/wb-commands.html#command-search-source) or a GUI ([Screenshot 1](https://www.sql-workbench.eu/objectsearcher_png.html) [Screenshot 2](https://www.sql-workbench.eu/wbgrepsource_png.html))
+* Search for data across all columns in all tables using a [SQL command](https://www.sql-workbench.eu/manual/wb-commands.html#command-search-data) or a GUI ([Screenshot 1](https://www.sql-workbench.eu/SearchTables_png.html) [Screenshot 2](https://www.sql-workbench.eu/parent_rows_png.html))
+* Reformatting (Pretty-Print) of SQL Statements ([Screenshot](https://www.sql-workbench.eu/SqlFormat_png.html))
+* Select rows from related tables according to their foreign key definitions ([Screenshot 1](https://www.sql-workbench.eu/child_rows_png.html) [Screenshot 2](https://www.sql-workbench.eu/parent_rows_png.html)).
+* Tooltips for INSERT statements to show the corresponding value or column ([Screenshot](https://www.sql-workbench.eu/insert_hint_png.html))
+* Copy data directly between to database servers using a [SQL command](https://www.sql-workbench.eu/manual/command-copy.html) or a GUI ([Screenshot](https://www.sql-workbench.eu/DataPumper_png.html))
+* [Macros](https://www.sql-workbench.eu/manual/using.html#macros) (aka aliases) for frequently used SQL statements
+* Variable substitution in SQL statements including smart prompting for values (can be combined with macros)
+* Auto completion for tables and columns in SQL statements ([Screenshot](https://www.sql-workbench.eu/completion_png.html))
+* Display database objects and their definitions ([Screenshot](https://www.sql-workbench.eu/table_definition_png.html))
+* Display table source ([Screenshot](https://www.sql-workbench.eu/TableSource_png.html))
+* Display view, procedure and trigger source code ([Screenshot](https://www.sql-workbench.eu/ViewSource_png.html))
+* Display foreign key constraints between tables ([Screenshot](https://www.sql-workbench.eu/FkDisplay_png.html))
+* Full support for BLOB data in query results, SQL statements, export and import. [Read more...](https://www.sql-workbench.eu/blob_example.html)
 
-* 100 Mbyte of free hard disc space
-* Valid e-mail, software download, license acceptance, and internet connection needed to activate full features and for software updates. After activation, full features are available in optional offline mode.
-
-For more information, see [https://www.razer.com/synapse-2](https://www.razer.com/synapse-2).
+For more information, see [https://www.sql-workbench.eu/](https://www.sql-workbench.eu/).
     </description>
-    <releaseNotes>https://www.razer.com/synapse-2</releaseNotes>
-    <projectUrl>https://www.razer.com/synapse-2</projectUrl>
-    <docsUrl>https://www.razer.com/synapse-2</docsUrl>
+    <releaseNotes>https://www.sql-workbench.eu/history.html</releaseNotes>
+    <projectUrl>https://www.sql-workbench.eu/</projectUrl>
+    <docsUrl>https://www.sql-workbench.eu/manual/workbench-manual.html</docsUrl>
     <packageSourceUrl>https://github.com/burck1/au-packages</packageSourceUrl>
-    <tags>razer synapse</tags>
-    <copyright>Razer Inc.</copyright>
-    <licenseUrl>https://assets.razerzone.com/downloads/software/RazerEndUserLicenseAgreement.pdf</licenseUrl>
+    <tags>sql workbench java</tags>
+    <copyright>Thomas Kellerer</copyright>
+    <licenseUrl>https://www.sql-workbench.eu/manual/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/burck1/au-packages@master/razer-synapse-2/icons/razer-synapse.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+    <iconUrl>https://cdn.jsdelivr.net/gh/burck1/au-packages@master/sql-workbench/icons/sql-workbench.png</iconUrl>
+    <dependencies>
+      <dependency id="javaruntime" version="8.0.40" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
