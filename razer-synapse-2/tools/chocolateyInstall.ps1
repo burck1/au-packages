@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 # DO NOT CHANGE THESE MANUALLY. USE update.ps1
-$url        = 'http://dl.razerzone.com/drivers/Synapse2/win/Web_Razer_Synapse_Installer_v2.21.23.1.exe'
-$checksum   = 'adcb671b790eb4cb179d4a8686ba9c7ac31c15427125678c08cd93a274175127'
+$url        = 'https://dl.razerzone.com/drivers/Synapse2/win/Web_Razer_Synapse_Installer_v2.21.24.1.exe'
+$checksum   = '74cdb893f072b1953db0c6679b38174ddd2e2d683ce4d8fef2d4cca5c47728c6'
 
 $packageArgs = @{
   packageName            = $env:ChocolateyPackageName
