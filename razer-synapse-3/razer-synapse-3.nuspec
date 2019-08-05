@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>razer-synapse-3</id>
     <title>Razer Synapse 3</title>
-    <version>1.0.103.136-beta</version>
+    <version>1.0.114.147-beta</version>
     <authors>Razer Inc.</authors>
     <owners>Alex Burck</owners>
     <summary>Maximize your unfair advantage with Razer Synapse 3, the unified hardware configuration tool that takes your Razer device to the next level.</summary>
