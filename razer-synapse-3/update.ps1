@@ -23,8 +23,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $response = Invoke-WebRequest -Uri $razerSynapseUrl -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
-  if ($response.StatusCode -ne 302) {
+  $response = try {
+    Invoke-WebRequest -Uri $razerSynapseUrl -UseBasicParsing -MaximumRedirection 0
+  } catch [Microsoft.PowerShell.Commands.HttpResponseException] {
+    $_.Exception.Response
+  }
+  if (($response.StatusCode -ne 301) -and ($response.StatusCode -ne 302)) {
     throw "HTTP $($response.StatusCode) when requesting $razerSynapseUrl"
   }
   if (-not $response.Headers.Location) {
@@ -36,9 +40,6 @@ function global:au_GetLatest {
     throw "Could not determine version from url $downloadUrl"
   }
   $version = $matches.Version
-
-  # Synapse 3 is currently in Beta. Remove once out of Beta
-  $version = "$version-beta"
 
   return @{
     Version = $version

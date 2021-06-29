@@ -23,7 +23,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $response = Invoke-WebRequest -Uri $razerSynapseUrl -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
+  $response = try {
+    Invoke-WebRequest -Uri $razerSynapseUrl -UseBasicParsing -MaximumRedirection 0
+  } catch [Microsoft.PowerShell.Commands.HttpResponseException] {
+    $_.Exception.Response
+  }
   if ($response.StatusCode -ne 302) {
     throw "HTTP $($response.StatusCode) when requesting $razerSynapseUrl"
   }
